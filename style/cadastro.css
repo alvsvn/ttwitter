@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #181b24;
+  min-height: 100vh;
+}
+
+
+/* ======================================================
+   BASE = DESKTOP (prioridade), referência 1440x1024
+   ====================================================== */
+
+.cadastro-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 254px;
+  padding: 24px 173px 24px 173px;
+  min-height: 90vh;
+}
+
+
+/* Card do formulário (à esquerda) */
+.cadastro-card {
+  background-color: #f0f0f0;
+  border-radius: 16px;
+  padding: 50px 36px 40px 36px;
+  width: 547px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.cadastro-form {
+  width: 100%;
+}
+
+.cadastro-form h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #1a1a1a;
+  text-align: center;
+  line-height: 1.3;
+}
+
+
+/* Inputs (não interativos) */
+.input-group {
+  position: relative;
+  width: 400px;
+  max-width: 100%;
+  margin: 0 auto 20px auto;
+}
+
+.input-group label {
+  position: absolute;
+  top: -8px;
+  left: 10px;
+  background-color: #f0f0f0;
+  padding: 0 6px;
+  font-size: 12px;
+  color: #555;
+}
+
+.input-group input {
+  width: 100%;
+  height: 58px;
+  padding: 0 14px;
+  border: 1px solid #999;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  cursor: default;
+  pointer-events: none;
+}
+
+
+/* Toggle de senha (não interativo) */
+.senha-group {
+  display: flex;
+}
+
+.toggle-senha {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: default;
+  padding: 4px;
+  pointer-events: none;
+}
+
+.toggle-senha img {
+  width: 18px;
+  height: 18px;
+}
+
+
+/* Checkbox de termos (não interativo) */
+.checkbox-group {
+  width: 400px;
+  max-width: 100%;
+  margin: 0 auto 24px auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-top: 4px;
+  cursor: default;
+  pointer-events: none;
+}
+
+.checkbox-group label {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.4;
+  cursor: default;
+}
+
+.termos-link {
+  color: #105f74;
+  text-decoration: underline;
+  cursor: default;
+}
+
+
+/* Botão Cadastrar (não interativo) */
+.btn-cadastrar {
+  width: 400px;
+  height: 49px;
+  max-width: 100%;
+  background-color: #105f74;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: default;
+  pointer-events: none;
+  margin: 0 auto 20px auto;
+  display: block;
+}
+
+
+/* Link Fazer Login (ÚNICO elemento interativo) */
+.link-login {
+  display: block;
+  text-align: center;
+  color: #105f74;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.link-login:hover {
+  text-decoration: none;
+}
+
+
+/* Logo (à direita) */
+.cadastro-brand {
+  display: flex;
+  justify-content: center;
+}
+
+.cadastro-logo {
+  width: 352px;
+  height: 365px;
+  max-width: 100%;
+}
+
+
+/* ======================================================
+   MOBILE - referência do protótipo 296x644
+   ====================================================== */
+@media (max-width: 480px) {
+
+  .cadastro-container {
+    flex-direction: column-reverse;
+    gap: 26px;
+    padding: 26px 16px 16px 16px;
+    min-height: 85vh;
+  }
+
+  .cadastro-logo {
+    width: 80px;
+    height: 83px;
+  }
+
+  .cadastro-card {
+    border-radius: 18px;
+    padding: 20px 18px;
+    width: 296px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .cadastro-form h1 {
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+
+  .input-group {
+  width: 250.5px;
+  margin-bottom: 27px;
+}
+
+  .input-group input {
+    height: 43px;
+    padding: 0 12px;
+    font-size: 13px;
+  }
+
+  .checkbox-group {
+    width: 250.5px;
+  }
+
+  .btn-cadastrar {
+    width: 201px;
+    height: 37px;
+    font-size: 14px;
+    margin: 0 auto 14px auto;
+  }
+}
