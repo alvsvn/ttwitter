@@ -1,11 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Faça login na TTwitter, a rede social para compartilhar o que você pensa.">
+  <title>TTwitter | Login</title>
+  <link rel="stylesheet" href="style/login.css">
 </head>
 <body>
-    
+
+  <main class="login-container">
+
+    <section class="login-brand" aria-hidden="true">
+      <img src="img/icon/LogoTT.svg" alt="" class="login-logo">
+    </section>
+
+    <section class="login-card">
+      <form class="login-form">
+
+        <h1>Bem vindo a plataforma TTwitter</h1>
+
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required>
+        </div>
+
+        <div class="input-group senha-group">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" name="senha" placeholder="••••••••••" required>
+          <button type="button" class="toggle-senha" aria-label="Mostrar senha">
+            <img src="img/icon/olho.svg" alt="">
+          </button>
+        </div>
+
+        <span class="esqueci-senha">Esqueci minha senha</span>
+
+        <button type="button" class="btn-entrar">Entrar</button>
+
+        <a href="cadastro.html" class="link-registrar">Registrar</a>
+
+        <p class="termos">
+            Li e estou de acordo com os
+            <span class="termos-link">Termos</span> e
+            <span class="termos-link">Condições de uso</span>.
+        </p>
+
+      </form>
+    </section>
+
+  </main>
+
 </body>
 </html>
