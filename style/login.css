@@ -168,12 +168,11 @@ body {
 @media (max-width: 480px) {
 
   .login-container {
-    flex-direction: column;
-    gap: 96px;
-    padding: 26px;
-    min-height: 85vh;
-  }
-
+  flex-direction: column;
+  gap: 116px;
+  padding: 8px 16px 8px 16px;
+  min-height: 85vh;
+}
   .login-logo {
     width: 80px;
     height: 83px;
